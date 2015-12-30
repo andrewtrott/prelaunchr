@@ -30,78 +30,52 @@ html.home{
 
 #home .hero{
 	width: 100%;
-	height: 595px;
-	background: url("home/backgroundveryhigh.jpg") center center no-repeat;
-	background-size: 1600px 595px;
+	height: 446px;
+	background: image-url("home/hero.jpg") center center no-repeat;
+	background-size: 1600px 446px;
 	overflow: hidden;
 	position: relative;
 	letter-spacing: .09em;
 	margin: 0 auto;
 }
 
-#home .hero .upcarelogo{
-	width: 100%;
-	height: 42px;
-	background: image-url("home/upcarelogo.png") no-repeat;
-	background-size: 196px 42px;
-	overflow: hidden;
-	position: relative;
-	letter-spacing: .09em;
-	margin: 75px 0 0 115px;
-}
-
 #home .hero .large{
 	font-weight: bold;
-	font-size: 54px;
-	color: #fff;
+	font-size: 40px;
+	color: #074E6F;
 	text-transform: uppercase;
-	margin: 50px 0 0 115px;
+	margin: 85px 0 0 136px;
 	position: relative;
 	z-index: 2;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 }
 
 #home .hero .small{
 	font-weight: bold;
-	color: #cbc6c0;
-	font-size: 17px;
+	color: #955F5D;
+	font-size: 18px;
 	margin: 10px 0 0 115px;
-	line-height: 24px;
+	line-height: 30px;
 	position: relative;
 	z-index: 2;
-	text-align: left;
-	width: 500px;
+	text-transform: uppercase;
+	text-align: center;
+	width: 375px;
 	letter-spacing: 1px;
-}
-
-#home .hero .separator{
-	width: 100%;
-    height: 10px;
-    background: url("home/divider.png") no-repeat;
-    margin: 38px 0px 38px 225px;
-    position: relative;
-    z-index: 2;
 }
 
 #home .form-wrap{
 	height: 80px;
-	width: 525px;
-	margin: 23px 0 0 115px;
+	width: 411px;
+	margin: 23px auto 0;
 }
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #333;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #333;
-   opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #333;
-   opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #333;
+#home .form-wrap .key{
+	width: 46px;
+	height: 19px;
+	margin: 0 auto;
+	background: image-url("home/key.png") 0 0 no-repeat;
+	background-size: 46px 19px;
 }
 
 #home .form-wrap .byline{
@@ -116,32 +90,25 @@ html.home{
 
 #home .form-wrap .email{
 	float: left;
-	font-size: 16px;
-    	padding: 19px 0 19px 15px;
-    	border: 1px solid #fff;
-    	width: 330px;
-    	outline: none;
-    	letter-spacing: 1px;
-    	margin-top: 3px;
-    	border-bottom-left-radius: 4px;
-    	border-top-left-radius: 4px;
+	font-size: 13px;
+	padding: 8px 0 8px 10px;
+	border: 1px solid #074E6F;
+	width: 256px;
+	outline: none;
+	letter-spacing: 1px;
 }
 
 #home .form-wrap .submit{
-	width: 175px;
-	background: #57a7b5;
+	width: 143px;
+	background: #074E6F;
 	float: left;
-	height: 67px;
+	height: 37px;
 	line-height: 37px;
 	color: #FFF;
-	font-size: 15px;
+	font-size: 13px;
 	text-transform: uppercase;
 	border: 0;
-	/* letter-spacing: 2px; */
-	/* padding: 10px 10px 10px 7px; */
-	border-radius: 4px;
-	font-weight: bold;
-	cursor: pointer;
+	letter-spacing: 2px;
 }
 
 #home .form-wrap.ended{
@@ -265,7 +232,7 @@ html.home{
 }
 
 .brandon{
-	font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+	font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 }
 
 #refer{
@@ -280,8 +247,8 @@ html.home{
 }
 
 #refer .header{
-	height: 65px;
-	background: #053850;
+	height: 50px;
+	background: #074E6F;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -309,17 +276,13 @@ html.home{
 	font-weight: normal;
 	font-size: 0;
 	line-height: 0;
-	/* margin-right: auto; */
+	margin-right: 14px;
 	letter-spacing: 1px;
-	background: url("refer/upcarelogosmall.png");
-	background-size: 157px 34px;
-	height: 34px;
-	width: 100%;
+	background: image-url("refer/logo.png") 0 0 no-repeat;
+	background-size: 106px 19px;
+	height: 19px;
+	width: 106px;
 	margin-top: 15px;
-	/* margin-left: auto; */
-	display: block;
-	background-position: center;
-	background-repeat: no-repeat;
 }
 
 #refer .hero{
@@ -331,12 +294,11 @@ html.home{
 #refer .mammoth{
 	width: 612px;
 	height: 394px;
-	background: url("refer/rewards.png") 0 0 no-repeat;
-	background-size: 460px 398px;
+	background: image-url("refer/mammoth.png") 0 0 no-repeat;
+	background-size: 610px 394px;
 	overflow: hidden;
 	margin-top: 15px;
 	float: left;
-	margin-left: 40px;
 }
 
 #refer .mammoth .need{
@@ -454,7 +416,7 @@ html.home{
 	background: image-url("refer/progress-bg.png") 0 0 repeat-x;
 	background-size: 1px 4px;
 	position: absolute;
-	top: 175px;
+	top: 100px;
 	z-index: 0;
 }
 
@@ -654,23 +616,23 @@ only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
 	#home .hero{
-		background: image-url("home/backgroundveryhigh.jpg") center center no-repeat;
-		background-size: 1600px 595px;
+		background: image-url("home/hero@2x.jpg") center center no-repeat;
+		background-size: 1600px 446px;
 	}
 
-	#home .hero .upcarelogo{
-		background: image-url("home/upcarelogo.png") no-repeat;
-		background-size: 196px 42px;	
+	#home .form-wrap .key{
+		background: image-url("home/key@2x.png") 0 0 no-repeat;
+		background-size: 46px 19px;
 	}
 
 	#refer .header .logo{
-		background: image-url("refer/upcarelogosmall.png") 0 0 no-repeat;
-		background-size: 157px 34px;
+		background: image-url("refer/logo@2x.png") 0 0 no-repeat;
+		background-size: 106px 19px;
 	}
 
 	#refer .mammoth{
-		background: image-url("refer/rewards.png") 0 0 no-repeat;
-		background-size: 460px 398px;
+		background: image-url("refer/mammoth@2x.png") 0 0 no-repeat;
+		background-size: 610px 394px;
 	}
 
 	#refer .share-wrap .social-links .fb{
