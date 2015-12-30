@@ -1,3 +1,18 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require reset
+ *= require_self
+ */
+
+
 form{
 	margin-bottom: 0;
 }
@@ -30,52 +45,76 @@ html.home{
 
 #home .hero{
 	width: 100%;
-	height: 446px;
-	background: image-url("home/hero.jpg") center center no-repeat;
-	background-size: 1600px 446px;
+	height: 595px;
+	background: url("home/backgroundveryhigh.jpg") center center no-repeat;
+	background-size: 1600px 595px;
 	overflow: hidden;
 	position: relative;
 	letter-spacing: .09em;
 	margin: 0 auto;
 }
 
-#home .hero .large{
-	font-weight: bold;
-	font-size: 40px;
-	color: #074E6F;
-	text-transform: uppercase;
-	margin: 85px 0 0 136px;
+#home .hero .upcarelogo{
+	width: 100%;
+	height: 42px;
+	background: url("home/upcarelogo.png") no-repeat;
+	background-size: 196px 42px;
+	margin: 75px 0 0 115px;
+	overflow: hidden;
 	position: relative;
-	z-index: 2;
-	letter-spacing: 2px;
+}
+
+#home .hero .large{
+    font-weight: bold;
+    font-size: 54px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 50px 0 0 115px;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 3px;
 }
 
 #home .hero .small{
-	font-weight: bold;
-	color: #955F5D;
-	font-size: 18px;
-	margin: 10px 0 0 115px;
-	line-height: 30px;
-	position: relative;
-	z-index: 2;
-	text-transform: uppercase;
-	text-align: center;
-	width: 375px;
-	letter-spacing: 1px;
+    color: #cbc6c0;
+    font-size: 17px;
+    margin: 10px 0 0 115px;
+    line-height: 24px;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    width: 500px;
+    letter-spacing: 1px;
 }
+
+#home .hero .separator{
+	width: 100%;
+    height: 10px;
+    background: url("home/divider.png") no-repeat;
+    margin: 38px 0px 38px 225px;
+    position: relative;
+    z-index: 2;
+	}
 
 #home .form-wrap{
 	height: 80px;
-	width: 411px;
-	margin: 23px auto 0;
+	width: 525px;
+	margin: 23px 0 0 115px;
 }
 
-#home .form-wrap .key{
-	width: 46px;
-	height: 19px;
-	margin: 0 auto;
-	background: image-url("home/key.png") 0 0 no-repeat;
-	background-size: 46px 19px;
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #333;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #333;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #333;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #333;
 }
 
 #home .form-wrap .byline{
@@ -90,25 +129,32 @@ html.home{
 
 #home .form-wrap .email{
 	float: left;
-	font-size: 13px;
-	padding: 8px 0 8px 10px;
-	border: 1px solid #074E6F;
-	width: 256px;
-	outline: none;
-	letter-spacing: 1px;
+    font-size: 16px;
+    padding: 19px 0 19px 15px;
+    border: 1px solid #fff;
+    width: 330px;
+    outline: none;
+    letter-spacing: 1px;
+    margin-top: 3px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
 }
 
 #home .form-wrap .submit{
-	width: 143px;
-	background: #074E6F;
-	float: left;
-	height: 37px;
-	line-height: 37px;
-	color: #FFF;
-	font-size: 13px;
-	text-transform: uppercase;
-	border: 0;
-	letter-spacing: 2px;
+    width: 175px;
+    background: #57a7b5;
+    float: left;
+    height: 67px;
+    line-height: 37px;
+    color: #FFF;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 0;
+    /* letter-spacing: 2px; */
+    /* padding: 10px 10px 10px 7px; */
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 #home .form-wrap.ended{
@@ -222,7 +268,7 @@ html.home{
 	font-size: 14px;
 	text-align: center;
 }
-
+ 
 
 
 /* Refer a friend page */
@@ -232,7 +278,7 @@ html.home{
 }
 
 .brandon{
-	font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+	font-family: 'Open Sans','Arial','Helvetica',sans-serif;
 }
 
 #refer{
@@ -247,8 +293,8 @@ html.home{
 }
 
 #refer .header{
-	height: 50px;
-	background: #074E6F;
+	height: 65px;
+	background: #053850;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -274,15 +320,19 @@ html.home{
 
 #refer .header .logo{
 	font-weight: normal;
-	font-size: 0;
-	line-height: 0;
-	margin-right: 14px;
-	letter-spacing: 1px;
-	background: image-url("refer/logo.png") 0 0 no-repeat;
-	background-size: 106px 19px;
-	height: 19px;
-	width: 106px;
-	margin-top: 15px;
+    font-size: 0;
+    line-height: 0;
+    /* margin-right: auto; */
+    letter-spacing: 1px;
+    background: url("refer/upcarelogosmall.png");
+    background-size: 157px 34px;
+    height: 34px;
+    width: 100%;
+    margin-top: 15px;
+    /* margin-left: auto; */
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #refer .hero{
@@ -294,11 +344,12 @@ html.home{
 #refer .mammoth{
 	width: 612px;
 	height: 394px;
-	background: image-url("refer/mammoth.png") 0 0 no-repeat;
-	background-size: 610px 394px;
+	background: url("refer/rewards.png") 0 0 no-repeat;
+	background-size: 460px 398px;
 	overflow: hidden;
 	margin-top: 15px;
 	float: left;
+	margin-left: 40px;
 }
 
 #refer .mammoth .need{
@@ -369,14 +420,14 @@ html.home{
 }
 
 #refer .share-wrap .social-links .fb{
-	background: image-url("refer/fb.png");
+	background: url("refer/fb.png");
 	background-size: 27px 27px;
 	width: 27px;
 	height: 27px;
 }
 
 #refer .share-wrap .social-links .twit{
-	background: image-url("refer/twit.png");
+	background: url("refer/twit.png");
 	background-size: 27px 27px;
 	width: 27px;
 	height: 27px;
@@ -413,10 +464,10 @@ html.home{
 #refer .prizes .progress{
 	height: 4px;
 	width: 100%;
-	background: image-url("refer/progress-bg.png") 0 0 repeat-x;
+	background: url("refer/progress-bg.png") 0 0 repeat-x;
 	background-size: 1px 4px;
 	position: absolute;
-	top: 100px;
+	top: 175px;
 	z-index: 0;
 }
 
@@ -427,7 +478,7 @@ html.home{
 }
 
 #refer .prizes .progress .mover .bar{
-	background: image-url("refer/progress-done.png") 0 0 repeat-x;
+	background: url("refer/progress-done.png") 0 0 repeat-x;
 	width: 165px;
 	height: 4px;
 	-webkit-background-size: 1px 4px;
@@ -503,14 +554,14 @@ html.home{
 #refer .prizes .products li.product .caret{
 	width: 100%;
 	height: 10px;
-	background: image-url("refer/caret.png") center center no-repeat;
+	background: url("refer/caret.png") center center no-repeat;
 	background-size: 16px 10px;
 	position: absolute;
 	bottom: -15px;
 }
 
 #refer .prizes .products li.product.selected .caret{
-	background: image-url("refer/caret-selected.png") center center no-repeat;
+	background: url("refer/caret-selected.png") center center no-repeat;
 	background-size: 16px 10px;
 }
 
@@ -616,57 +667,57 @@ only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
 	#home .hero{
-		background: image-url("home/hero@2x.jpg") center center no-repeat;
+		background: url("home/hero@2x.jpg") center center no-repeat;
 		background-size: 1600px 446px;
 	}
 
 	#home .form-wrap .key{
-		background: image-url("home/key@2x.png") 0 0 no-repeat;
+		background: url("home/key@2x.png") 0 0 no-repeat;
 		background-size: 46px 19px;
 	}
 
 	#refer .header .logo{
-		background: image-url("refer/logo@2x.png") 0 0 no-repeat;
+		background: url("refer/logo@2x.png") 0 0 no-repeat;
 		background-size: 106px 19px;
 	}
 
 	#refer .mammoth{
-		background: image-url("refer/mammoth@2x.png") 0 0 no-repeat;
+		background: url("refer/mammoth@2x.png") 0 0 no-repeat;
 		background-size: 610px 394px;
 	}
 
 	#refer .share-wrap .social-links .fb{
-		background: image-url("refer/fb@2x.png");
+		background: url("refer/fb@2x.png");
 		background-size: 27px 27px;
 	}
 
 	#refer .share-wrap .social-links .twit{
-		background: image-url("refer/twit@2x.png");
+		background: url("refer/twit@2x.png");
 		background-size: 27px 27px;
 	}
 
 	#refer .prizes .progress{
-		background: image-url("refer/progress-bg@2x.png") 0 0 repeat-x;
+		background: url("refer/progress-bg@2x.png") 0 0 repeat-x;
 		background-size: 1px 4px;
 	}
 
 	#refer .prizes .progress .mover .bar{
-		background: image-url("refer/progress-done@2x.png") 0 0 repeat-x;
+		background: url("refer/progress-done@2x.png") 0 0 repeat-x;
 		background-size: 1px 4px;
 	}
 
 	#refer .prizes .progress .mover .razor{
-		background: image-url("refer/razor@2x.png") 0 0 no-repeat;
+		background: url("refer/razor@2x.png") 0 0 no-repeat;
 		background-size: 82px 23px;
 	}
 
 	#refer .prizes .products li.product .caret{
-		background: image-url("refer/caret@2x.png") center center no-repeat;
+		background: url("refer/caret@2x.png") center center no-repeat;
 		background-size: 16px 10px;
 	}
 
 	#refer .prizes .products li.product.selected .caret{
-		background: image-url("refer/caret-selected@2x.png") center center no-repeat;
+		background: url("refer/caret-selected@2x.png") center center no-repeat;
 		background-size: 16px 10px;
 	}
 }
